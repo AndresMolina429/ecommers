@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academlo Store</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dark-theme">
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav-logo-icon">
+          <title>Academlo Logo</title>
+          <g>
+            <g>
+              <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+              </path>
+            </g>
+          </g>
+        </svg> 
+        <strong>Store</strong>
+      </a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#" class="active">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">Products</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="nav-grid">
+        <i class="bx bx-moon change-theme bx-sun" id="theme-button"></i>
+
+        <div class="nav__shop" id="cart-shop">
+          <i class="bx bx-shopping-bag"></i>
+          <span id="cart-count" class="count">0</span>
+        </div>
+
+        <div class="" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <div class="cart" id="cart">
+    <i class="bx bx-x cart-close" id="cart-close"></i>
+
+    <h2 class="cart__title-center">My Cart</h2>
+
+    <div class="cart__container">
+      <div class="cart__empty">
+        <img src="assets/img/empty-cart.png" alt="empty cart">
+        <h2>Your cart is empty</h2>
+        <p>You can add items to your cart by clicking on the "<i class="bx bx-plus"></i>" button on the product page.</p>
+      </div></div>
+
+    <div class="cart__prices">
+      <span class="cart__prices-item"><span id="items-count">0</span> items</span>
+      <span class="cart__prices-total" id="cart-total">$0.00</span>
+    </div>
+
+    <div class="cart__checkout">
+      <button class="button cart__btn" id="cart-checkout" disabled="disabled"><i class="bx bxs-check-shield"></i> Checkout</button>
+    </div>
+
+  </div> -->
+
+  <main class="main">
+
+    <section class="home" id="home">
+      <div class="container home-container grid">
+        <div class="container-img">
+          <img src="assets/images/featured1.png" alt="" class="img-product-init">
+        </div>
+
+        <div class="home-data">
+          <h1 class="home-title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+          <p class="home-description">
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+            design.
+          </p>
+          <span class="home-price">$14.00</span>
+
+          <div class="home-btns">
+            <a href="#" class="button button--gray button--small">
+              Discover
+            </a>
+
+            <button class="button home-button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="register-products">
+          <div class="all-products">
+            <h3>
+              Show All
+            </h3>
+            <span>
+              show all products
+            </span>
+          </div>
+
+          <div class="hoodies">
+            <h3>
+              Hoodies
+            </h3>
+            <span>
+              3 products
+            </span>
+          </div>
+
+          <div class="shirts">
+            <h3>
+              Shirts
+            </h3>
+            <span>
+              4 products
+            </span>
+          </div>
+
+          <div class="sweatshirts">
+            <h3>
+              Sweatshirts
+            </h3>
+            <span>
+              4 products
+            </span>
+          </div>
+        </div>
+
+        <div class="container-products grid" id="container-products">
+          <article class="hoodies">
+          <div class="products-img">
+            <img src="./assets/images/featured1.png" alt="Hoodies" class="img-products">
+          </div>
+    
+          <div class="reg-products">
+            <h2 class="products-price">$14.00 <span>| Stock: 10</span></h2>
+            <h3>Hoodies</h3>
+    
+            <button class="button add-product" data-id="1">
+              <i class="bx bx-plus"></i>
+            </button>
+          </div>
+          </article>
+          <article class="shirts">
+          <div class="products-img">
+            <img src="./assets/images/featured2.png" alt="Shirts" class="img-products">
+          </div>
+    
+          <div class="reg-products">
+            <h2 class="products-price">$24.00 <span>| Stock: 15</span></h2>
+            <h3>Shirts</h3>
+    
+            <button class="button add-product" data-id="2">
+              <i class="bx bx-plus"></i>
+            </button>
+          </div>
+          </article>
+          <article class="sweatshirts">
+          <div class="products-img">
+            <img src="./assets/images/featured3.png" alt="Sweatshirts" class="img-products">
+          </div>
+  
+          <div class="reg-products">
+            <h2 class="products-price">$24.00 <span>| Stock: 20</span></h2>
+            <h3>Sweatshirts</h3>
+    
+            <button class="button add-product" data-id="3">
+              <i class="bx bx-plus"></i>
+            </button>
+          </div>
+          </article>
+      </div>
+     </div>
+    </section>
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer-container container grid">
+      <div class="footer-content">
+        <h3>Our information</h3>
+          <span>Toluca - México</span>
+      </div>
+      <div class="footer__content">
+        <h3>About Us</h3>
+          <span>
+            Support Center
+          </span>
+          <span>
+           Customer Support
+          </span>
+          <span>
+            About Us
+          </span>
+          <span>
+            Copy Right
+          </span>
+      </div>
+
+      <div class="footer__content">
+        <h3>Product</h3>
+          <span>
+            Hoodies
+          </span>
+          <span>
+            Shirts
+          </span>
+          <span>
+            Sweatshirts
+          </span>
+      </div>
+
+      <div class="footer__content">
+        <h3>Social</h3>
+
+        <ul class="footer-social">
+          <a href="#">
+            <i class="bx bxl-facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <span class="copyrigth">© ACADEMLO. All rigths reserved</span>
+  </footer>
+
+
+  <!--=============== MIXITUP FILTER ===============-->
+  <script src="assets/js/helpers/mixitup.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js" type="module"></script>
+
+
+</body></html>
